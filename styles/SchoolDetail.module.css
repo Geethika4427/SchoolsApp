@@ -1,0 +1,54 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+.imageWrap img {
+  width: 100%;
+  border-radius: 12px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.details p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #555;
+}
+
+.applyBtn {
+  display: inline-block;
+  background: #0070f3;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.applyBtn:hover {
+  background: #005bb5;
+}
+
+.notFound {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 22px;
+  color: #999;
+}

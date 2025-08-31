@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  color: #fff;
+  padding: 20px;
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.dashboard p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.dashboardLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #0070f3;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.btn:hover {
+  background: #005bb5;
+}
+
+.btn-secondary {
+  background: #555;
+}
+
+.btn-secondary:hover {
+  background: #333;
+} 
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #4CAF50;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.navLinks a {
+  margin-left: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.searchBar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  font-size: 16px;
+}
+
+.searchBar button {
+  padding: 10px 16px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.searchBar button:hover {
+  background: #45a049;
+}
+
+.dashboardLinks {
+  margin-top: 20px;
+}
