@@ -3,16 +3,17 @@
 A full-stack **Next.js + MySQL** web application to manage schools, with **image uploads to Cloudinary** and database hosted on **Railway**. The app is deployed on **Vercel**.
 
 ## **Live Demo**
-[View the app on Vercel](https://schools-b8kmjp71o-geethikas-projects-f95d8a3e.vercel.app)
+[View the app on Vercel](https://vercel.com/geethikas-projects-f95d8a3e/schools-app-7npp/3aGAY5VgmBgpRnjgZWzumeXLXf9n)
 
 ## **Features**
 - Add new schools with image upload
 - Show list of schools with details
 - View individual school details
-- Fully hosted on Vercel (frontend + backend)
-- Images stored on Cloudinary
-- Database hosted on Railway MySQL
+- Fully hosted on **Vercel** (frontend + backend)
+- Images stored on **Cloudinary**
+- Database hosted on **Railway MySQL**
 - Server-side validation for form inputs
+- Responsive design for mobile and desktop
 
 ## **Tech Stack**
 - Frontend: Next.js, React
@@ -54,14 +55,13 @@ CLOUDINARY_API_SECRET=<Cloudinary API secret>
 ## **Setup Instructions**
 
 1. **Clone the repository**
-git clone https://github.com/YourUsername/Schools-App.git <br>
-cd Schools-App<br>
-# Install dependencies
+git clone https://github.com/Geethika4427/SchoolsApp.git <br>
+cd SchoolsApp<br>
 
+# Install dependencies
 npm install
 
 # Run locally<br>
-
 npm run dev <br>
 Open http://localhost:3000
 
@@ -70,4 +70,9 @@ Open http://localhost:3000
 1) Push changes to GitHub <br>
 2) Vercel automatically redeploys the app <br>
 3) Make sure environment variables are set in Vercel<br>
+
+# Author
+Geethika <br>
+
+GitHub: https://github.com/Geethika4427
 
