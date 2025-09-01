@@ -3,7 +3,7 @@
 A full-stack **Next.js + MySQL** web application to manage schools, with **image uploads to Cloudinary** and database hosted on **Railway**. The app is deployed on **Vercel**.
 
 ## **Live Demo**
-[View the app on Vercel](https://vercel.com/geethikas-projects-f95d8a3e/schools-app-7npp/3aGAY5VgmBgpRnjgZWzumeXLXf9n)
+[View the app on Vercel](https://schools-app-7npp.vercel.app/)
 
 ## **Features**
 - Add new schools with image upload
