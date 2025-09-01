@@ -84,14 +84,15 @@ export default function Home() {
           <div></div>
         </div>
 
-        {/* Mobile menu */}
-        <div className={`${styles.mobileMenu} ${menuOpen ? 'show' : ''}`}>
-          <Link href="/addSchool" onClick={() => setMenuOpen(false)}>Add School</Link>
-          <Link href="/showSchools" onClick={() => setMenuOpen(false)}>Find Schools</Link>
-          <Link href="/login" onClick={() => setMenuOpen(false)}>Login</Link>
-          <Link href="/signup" onClick={() => setMenuOpen(false)}>Signup</Link>
-        </div>
-      </nav>
+      {/* Mobile menu */}
+<div className={`${styles.mobileMenu} ${menuOpen ? styles.show : ''}`}>
+  <Link href="/addSchool" onClick={() => setMenuOpen(false)}>Add School</Link>
+  <Link href="/showSchools" onClick={() => setMenuOpen(false)}>Find Schools</Link>
+  <Link href="/login" onClick={() => setMenuOpen(false)}>Login</Link>
+  <Link href="/signup" onClick={() => setMenuOpen(false)}>Signup</Link>
+</div>
+
+</nav>
 
       <h1 className={styles.title}>Welcome to Schools App</h1>
       <p className={styles.subtitle}>

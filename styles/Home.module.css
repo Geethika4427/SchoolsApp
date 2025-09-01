@@ -151,13 +151,21 @@ html, body {
   top: 56px; /* height of navbar */
   left: 0;
   padding: 10px 0;
+  box-sizing: border-box;
+  z-index: 999;
 }
 
 .mobileMenu a {
   padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+.show {
+  display: flex;
+}
 /* Media query for mobile */
 @media (max-width: 768px) {
   .navLinks {
@@ -172,8 +180,6 @@ html, body {
     display: flex;
   }
 }
-
-
 
 
 .searchBar {
