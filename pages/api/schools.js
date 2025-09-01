@@ -94,17 +94,17 @@
 
 
 import formidable from 'formidable';
-import fs from 'fs';
 import { v2 as cloudinary } from 'cloudinary';
 import pool from '../../lib/db';
 import { v4 as uuidv4 } from 'uuid';
 
 export const config = {
   api: {
-    bodyParser: false, 
+    bodyParser: false, // important for formidable
   },
 };
 
+// Configure Cloudinary
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
@@ -141,7 +141,7 @@ export default async function handler(req, res) {
         const email_id = (fields.email_id?.[0] || '').trim();
         const contact = fields.contact?.[0] ? Number(fields.contact[0]) : null;
 
-        // Basic validation
+        // Validation
         if (!name || !address || !city || !state || !email_id) {
           return res.status(400).json({ success: false, error: 'Missing required fields' });
         }
@@ -157,7 +157,7 @@ export default async function handler(req, res) {
             folder: 'schoolImages',
             public_id: uuidv4(),
           });
-          imagePath = uploadResult.secure_url; // Cloudinary URL
+          imagePath = uploadResult.secure_url;
         }
 
         const sql =
@@ -185,3 +185,4 @@ export default async function handler(req, res) {
   res.setHeader('Allow', ['GET', 'POST']);
   res.status(405).end(`Method ${req.method} Not Allowed`);
 }
+
