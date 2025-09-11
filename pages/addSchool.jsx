@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/router'; 
 import styles from '../styles/Form.module.css';
+import { verifyToken } from '../lib/auth'; 
 
 export default function AddSchool() {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
@@ -106,4 +107,26 @@ export default function AddSchool() {
       </form>
     </div>
   );
+}
+
+// ✅ Protect route with getServerSideProps
+export async function getServerSideProps({ req }) {
+  const cookies = req.headers.cookie || '';
+  const match = cookies
+    .split(';')
+    .map(s => s.trim())
+    .find(s => s.startsWith((process.env.COOKIE_NAME || 'auth_token') + '='));
+
+  if (!match) {
+    return { redirect: { destination: '/login', permanent: false } };
+  }
+
+  const token = match.split('=')[1];
+  const payload = verifyToken(token);
+
+  if (!payload) {
+    return { redirect: { destination: '/login', permanent: false } };
+  }
+
+  return { props: {} };
 }
