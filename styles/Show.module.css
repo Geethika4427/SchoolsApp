@@ -1,10 +1,9 @@
-body {
+ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(120deg, #a1e3b9 0%, #8fd3f4 100%);
   min-height: 100vh;
 }
-
 
 .container {
   max-width: 1100px;
@@ -107,4 +106,5 @@ body {
 
 .button:hover {
   background: #005bb5;
-}
+} 
+
