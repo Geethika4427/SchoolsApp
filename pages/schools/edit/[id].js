@@ -4,10 +4,12 @@ import { useRouter } from "next/router";
 // import styles from "../../../styles/Form.module.css"; 
 // import { verifyToken } from "../../../lib/auth";
 // import pool from "../../../lib/db";
-import { verifyToken } from "lib/auth";
-import pool from "lib/db";
-import styles from "styles/Form.module.css";
-
+// import { verifyToken } from "lib/auth";
+// import pool from "lib/db";
+// import styles from "styles/Form.module.css";
+import styles from "../../styles/Form.module.css";
+import { verifyToken } from "../../lib/auth";
+import pool from "../../lib/db";
 
 export default function EditSchool({ school }) {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
