@@ -23,7 +23,7 @@ export default function Home() {
           <Link href="/showSchools">Find Schools</Link>
           <Link href="/login">Login</Link>
           {/* <Link href="/signup">Signup</Link> */}
-               <Link href="/test">Test Page</Link>
+              
         </div>
 
         {/* Hamburger menu for mobile */}
@@ -39,7 +39,7 @@ export default function Home() {
   <Link href="/showSchools" onClick={() => setMenuOpen(false)}>Find Schools</Link>
   <Link href="/login" onClick={() => setMenuOpen(false)}>Login</Link>
   {/* <Link href="/signup" onClick={() => setMenuOpen(false)}>Signup</Link> */}
-    <Link href="/test" onClick={() => setMenuOpen(false)}>Test Page</Link>
+   
 </div>
 
 </nav>
